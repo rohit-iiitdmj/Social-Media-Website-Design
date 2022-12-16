@@ -87,7 +87,7 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    height: 100vh;
+    
 }
 .right-side-bar{
     background: #fff;
@@ -102,6 +102,8 @@ nav{
 }
 .main-content{
     flex-basis:47% ;
+    
+    
 
 }
 .imp-link a{
@@ -270,4 +272,62 @@ nav{
     width:35px;
     border: none;
 }
- 
+.write-post-containe{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.user-profile p{
+    
+    font-weight: 500;
+    color: #626262;
+}
+.user-profile small{
+    font-size: 12px;
+
+}
+.post-input-container{
+    padding-left:55px ;
+    padding-top:20px ;
+} 
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius:1px solid #ccc ;
+    background: transparent;
+    resize: none;
+}  
+.add-post-link{
+    display: flex;
+    margin-top:10px ;
+    
+   
+
+}
+.add-post-link a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #626262;
+    
+    font-size: 13px;
+} 
+.add-post-link a img{
+    width: 20px;
+    margin-right: 10px;
+}
