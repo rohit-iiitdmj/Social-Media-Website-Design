@@ -26,9 +26,56 @@
                 <img src="/images/search.png" alt="" />
                 <input type="text" placeholder="Search" />
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()" >
                 <img src="/images/profile-pic.png" alt="" />
             </div>
+        </div>
+        <!-- setting-menu -->
+        <div class="setting-menu">
+            <div id="drak-btn" >
+                <span></span>
+            </div>
+
+
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="/images/profile-pic.png" alt="" />
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/images/feedback.png" alt="" />
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help Us to improve the New design</a>
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="setting-link">
+                    <img src="/images/setting.png" alt="" class="setting-icon">
+                    <a href="#">Setting & Privacy <img src="/images/arrow.png" alt="" width="10px" > </a>
+                </div>
+                <div class="setting-link">
+                    <img src="/images/help.png" alt="" class="setting-icon">
+                    <a href="#">Help & Support <img src="/images/arrow.png" alt="" width="10px" > </a>
+                </div>
+                <div class="setting-link">
+                    <img src="/images/display.png" alt="" class="setting-icon">
+                    <a href="#"> Display &Accessibility <img src="/images/arrow.png" alt="" width="10px" > </a>
+                </div>
+                <div class="setting-link">
+                    <img src="/images/logout.png" alt="" class="setting-icon">
+                    <a href="#"> logout <img src="/images/arrow.png" alt="" width="10px" > </a>
+                </div>
+
+            </div>
+          
+
         </div>
     </nav>
     <div class="container">
@@ -301,6 +348,7 @@
     <div class="footer">
         <p>Copyright 2021 - Social Media</p>
     </div>
+    <script src="social.js"></script>
 </body>
 
 </html>

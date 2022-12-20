@@ -4,8 +4,25 @@
     font-family:'poppins',sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --body-color:#efefef;
+    --nav-color:#1876f2;
+    --bg-color:#fff;
+
+
+}
+.drak-theme{
+    --body-color:#0a0a0a;
+    --nav-color:#000;
+    --bg-color:#000;
+}
+
+
+
 body{
-    background: #efefef; ;
+    background: var(--body-color);
+    transition: background 0.3s;
+
 }
 nav{
     position:sticky;
@@ -14,7 +31,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f2;
+    background:var(--nav-color);
     padding: 5px 5%;
 }
 .logo{
@@ -90,7 +107,7 @@ nav{
     
 }
 .right-side-bar{
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #626262;;
@@ -274,7 +291,7 @@ nav{
 }
 .write-post-containe{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -333,7 +350,7 @@ nav{
 }
 .post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -403,3 +420,85 @@ nav{
     font-size: 15px;
 
 }
+.setting-menu{
+    position: absolute;
+    width: 80%;
+    max-width: 350px;
+    
+    background:var(--bg-color);
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.4);
+    
+    border-radius: 4px;
+    overflow: hidden;
+    right:5%;
+    top:108%;
+    max-height: 0;
+    transition: max-height 0.3s ;
+}
+.setting-menu-height{
+    max-height: 450px;
+    
+}
+.user-profile a{
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+
+}
+.setting-menu-inner{
+    padding: 20px;
+    
+
+}
+.setting-menu-inner hr{
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+    
+}
+.setting-link {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+}
+.setting-link .setting-icon{
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.setting-link a{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content:space-between ;
+    color: #626262;
+    text-decoration: none;
+}
+#drak-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 50px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+
+}
+#drak-btn span{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+#drak-btn.drak-btn-on{
+    padding-left: 23px;
+    background: #0a0a0a;
+
+}
+
